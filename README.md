@@ -12,3 +12,8 @@ Visual Studio 2012 Extensions:
 * OverviewMargin2012
 * Visual Studio 2012 Color Theme Editor
 * Visual Studio Extensions för Windows Library for Javascript
+
+
+
+Sublime Text 2:
+* Ciapre theme
