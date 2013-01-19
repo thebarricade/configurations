@@ -115,7 +115,6 @@
 							<Item Name="Smart Tag" Foreground="0x006515EA" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Track Changes before save" Foreground="0x02000000" Background="0x0000A0B3" BoldFont="No"/>
 							<Item Name="Brace Matching (Rectangle)" Foreground="0x02000000" Background="0x00505050" BoldFont="No"/>
-							<Item Name="Refactoring Background" Background="0x0029413F" BoldFont="No"/>
 							<Item Name="Refactoring Current Field" Foreground="0x01000000" Background="0x001A481A" BoldFont="No"/>
 						</Items>
 					</Category>
