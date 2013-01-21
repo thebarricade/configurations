@@ -3,6 +3,11 @@ configurations
 
 Various configurations for tools I use
 
+Chrome:
+* KnockoutJS context debugger
+* VX XML Viewer
+* Window Resizer
+
 Visual Studio 2012 Extensions:
 * Brace Completer
 * Git Source Control provider
