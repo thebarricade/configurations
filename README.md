@@ -3,6 +3,7 @@ configurations
 
 Various configurations for tools I use
 
+
 Chrome:
 * KnockoutJS context debugger
 * VX XML Viewer
