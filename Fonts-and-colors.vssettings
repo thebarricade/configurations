@@ -8,6 +8,9 @@
 			<PropertyValue name="Version">2</PropertyValue>
 			<FontsAndColors Version="2.0">
 				<Categories>
+					<Category GUID="{587D0421-E473-4032-B214-9359F3B7BC80}" FontName="Source Code Pro" FontSize="10" CharSet="1" FontIsDefault="No">
+						<Items/>
+					</Category>
 					<Category GUID="{58E96763-1D3B-4E05-B6BA-FF7115FD0B7B}" FontName="Source Code Pro" FontSize="10" CharSet="0" FontIsDefault="No">
 						<Items>
 							<Item Name="Plain Text" Foreground="0x00F3F2F1" Background="0x002A2822" BoldFont="No"/>
@@ -16,9 +19,20 @@
 							<Item Name="Indicator Margin" Foreground="0x02000000" Background="0x00F0F0F0" BoldFont="No"/>
 						</Items>
 					</Category>
+					<Category GUID="{6202FF3E-488E-4EAD-92CB-BE089659F8D7}" FontIsDefault="Yes">
+						<Items>
+							<Item Name="Grid Cell" Foreground="0x00FFFFFF" Background="0x002A2822" BoldFont="No"/>
+							<Item Name="Selected Cell" Foreground="0x02000000" Background="0x00E17100" BoldFont="No"/>
+							<Item Name="Inactive Selected Cell" Foreground="0x02000000" Background="0x009F7C59" BoldFont="No"/>
+							<Item Name="Null Value Cell" Foreground="0x02000000" Background="0x00504D41" BoldFont="No"/>
+						</Items>
+					</Category>
 					<Category GUID="{75A05685-00A8-4DED-BAE5-E7A50BFA929A}" FontName="Source Code Pro" FontSize="10" CharSet="0" FontIsDefault="No">
 						<Items>
-							<Item Name="SymbolLineClassificationFormat" Foreground="0x00FF4242" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Todo Item" Foreground="0x00F08400" Background="0x01000001" BoldFont="Yes"/>
+							<Item Name="ReSharper CSS keyword" Foreground="0x00FF7777" Background="0x01000001" BoldFont="No"/>
+							<Item Name="ReSharper Matched Brace" Foreground="0x01000000" Background="0x00373700" BoldFont="No"/>
+							<Item Name="ReSharper Matched Format String Item" Foreground="0x01000000" Background="0x000A3349" BoldFont="No"/>
 							<Item Name="MarkerFormatDefinition/HighlightedReference" Foreground="0x02000000" Background="0x004D493E" BoldFont="No"/>
 							<Item Name="XML Doc Comment" Foreground="0x008AA399" Background="0x02000000" BoldFont="No"/>
 							<Item Name="XML Doc Tag" Foreground="0x00808080" Background="0x02000000" BoldFont="No"/>
@@ -30,6 +44,8 @@
 							<Item Name="Operator" Foreground="0x00B7E2E8" Background="0x02000000" BoldFont="No"/>
 							<Item Name="String" Foreground="0x000076EC" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Number" Foreground="0x0022CDFF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CurrentLineActiveFormat" Foreground="0x003C3931" Background="0x003C3931" BoldFont="No"/>
+							<Item Name="CurrentLineInactiveFormat" Foreground="0x003C3931" Background="0x003C3931" BoldFont="No"/>
 							<Item Name="deltadiff.remove.line" Foreground="0x01000000" Background="0x000000A6" BoldFont="No"/>
 							<Item Name="deltadiff.add.line" Foreground="0x01000000" Background="0x00255A49" BoldFont="No"/>
 							<Item Name="deltadiff.remove.word" Foreground="0x009999FF" Background="0x000000A6" BoldFont="No"/>
@@ -57,8 +73,41 @@
 							<Item Name="HTML Operator" Foreground="0x00E4E2E0" Background="0x02000000" BoldFont="No"/>
 							<Item Name="HTML Server-Side Script" Foreground="0x00B58C8C" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="HTML Tag Delimiter" Foreground="0x0063C793" Background="0x02000000" BoldFont="No"/>
-							<Item Name="RegularExpressionClassificationFormat" Foreground="0x000000CC" Background="0x01000001" BoldFont="No"/>
-							<Item Name="Razor Code" Foreground="0x02000000" Background="0x002A2822" BoldFont="No"/>
+							<Item Name="Razor Code" Foreground="0x02000000" Background="0x00283131" BoldFont="No"/>
+							<Item Name="RegularExpressionClassificationFormat" Foreground="0x006A6AFF" Background="0x01000001" BoldFont="No"/>
+							<Item Name="SymbolLineClassificationFormat" Foreground="0x00FF4242" Background="0x02000000" BoldFont="No"/>
+							<Item Name="BuildHead" Foreground="0x00008000" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="BuildText" Foreground="0x00808080" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogError" Foreground="0x000000FF" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogWarning" Foreground="0x00008080" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogInformation" Foreground="0x008B0000" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogCustom1" Foreground="0x00800080" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogCustom2" Foreground="0x007A96E9" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogCustom3" Foreground="0x00008CFF" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogCustom4" Foreground="0x002A2AA5" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="FindResultsSearchTerm" Foreground="0x00FF0000" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="FindResultsFilename" Foreground="0x00808080" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LessCssVariableDeclarationClassificationFormat" Foreground="0x008000FF" Background="0x01000001" BoldFont="No"/>
+							<Item Name="LessCssVariableReferenceFormat" Foreground="0x00FF00FF" Background="0x01000001" BoldFont="No"/>
+							<Item Name="LessCssNamespaceReferenceFormat" Foreground="0x000080FF" Background="0x01000001" BoldFont="No"/>
+							<Item Name="LessCssMixinDeclarationFormat" Foreground="0x00404080" Background="0x01000001" BoldFont="No"/>
+							<Item Name="LessCssMixinReferenceFormat" Foreground="0x000000FF" Background="0x01000001" BoldFont="No"/>
+							<Item Name="LessCssKeywordFormat" Foreground="0x00FF8080" Background="0x01000001" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{9973EFDF-317D-431C-8BC1-5E88CBFD4F7F}" FontIsDefault="Yes">
+						<Items>
+							<Item Name="BuildHead" Foreground="0x00008000" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="BuildText" Foreground="0x00808080" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogInformation" Foreground="0x008B0000" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogWarning" Foreground="0x00008080" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogError" Foreground="0x000000FF" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogCustom1" Foreground="0x00800080" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogCustom2" Foreground="0x007A96E9" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogCustom3" Foreground="0x00008CFF" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="LogCustom4" Foreground="0x002A2AA5" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="FindResultsFilename" Foreground="0x00808080" Background="0x00E7E7E5" BoldFont="No"/>
+							<Item Name="FindResultsSearchTerm" Foreground="0x00FF0000" Background="0x00E7E7E5" BoldFont="No"/>
 						</Items>
 					</Category>
 					<Category GUID="{B36B0228-DBAD-4DB0-B9C7-2AD3E572010F}" FontName="Segoe UI" FontSize="9" CharSet="1" FontIsDefault="No">
@@ -91,6 +140,7 @@
 							<Item Name="User Types(Interfaces)" Foreground="0x00BF7CC5" Background="0x02000000" BoldFont="No"/>
 							<Item Name="User Types(Delegates)" Foreground="0x00B18C67" Background="0x02000000" BoldFont="No"/>
 							<Item Name="User Types(Enums)" Foreground="0x00B18C67" Background="0x02000000" BoldFont="No"/>
+							<Item Name="SQL System Table" Foreground="0x01000005" Background="0x00000077" BoldFont="No"/>
 							<Item Name="XAML Text" Foreground="0x00FFFFFF" Background="0x02000000" BoldFont="No"/>
 							<Item Name="XAML Delimiter" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
 							<Item Name="XAML Comment" Foreground="0x007B7466" Background="0x02000000" BoldFont="No"/>
@@ -115,6 +165,7 @@
 							<Item Name="Smart Tag" Foreground="0x006515EA" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Track Changes before save" Foreground="0x02000000" Background="0x0000A0B3" BoldFont="No"/>
 							<Item Name="Brace Matching (Rectangle)" Foreground="0x02000000" Background="0x00505050" BoldFont="No"/>
+							<Item Name="Refactoring Background" Background="0x0029413F" BoldFont="No"/>
 							<Item Name="Refactoring Current Field" Foreground="0x01000000" Background="0x001A481A" BoldFont="No"/>
 						</Items>
 					</Category>
